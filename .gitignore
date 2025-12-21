@@ -2,10 +2,8 @@
 dist/
 node_modules/
 *.log
-.env*
 
 # Development tools
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -17,3 +15,4 @@ Thumbs.db
 *.crx
 *.pem
 web-ext-artifacts/
+config.bat
