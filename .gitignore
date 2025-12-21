@@ -1,0 +1,19 @@
+# Chrome Extension Development
+dist/
+node_modules/
+*.log
+.env*
+
+# Development tools
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+*.crx
+*.pem
+web-ext-artifacts/

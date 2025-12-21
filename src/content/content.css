@@ -1,0 +1,8 @@
+#grid-assistant-overlay {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#grid-assistant-overlay * {
+  box-sizing: border-box;
+}

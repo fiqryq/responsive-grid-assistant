@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Assistant</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <h1>Grid Assistant</h1>
+            <div class="toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="grid-toggle" />
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Show Grid</span>
+            </div>
+        </header>
+
+        <main class="popup-content">
+            <section class="settings-section">
+                <h2>Grid Settings</h2>
+
+                <div class="control-group">
+                    <label for="columns">Columns</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="columns" min="1" max="24" value="12" />
+                        <span id="columns-value">12</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="gutter">Gutter</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="gutter" min="0" max="50" value="20" />
+                        <span id="gutter-value">20px</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="margin">Margin</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="margin" min="0" max="50" value="16" />
+                        <span id="margin-value">16px</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="max-width">Max Width</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="max-width" min="800" max="2000" step="50" value="1200" />
+                        <span id="max-width-value">1200px</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="opacity">Opacity</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="opacity" min="0.1" max="1" step="0.1" value="0.3" />
+                        <span id="opacity-value">0.3</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="color">Grid Color</label>
+                    <div class="color-input-wrapper">
+                        <input type="color" id="color" value="#3b82f6" />
+                        <input type="text" id="color-text" value="#3b82f6" class="color-text" />
+                    </div>
+                </div>
+
+                </section>
+
+            <section class="vertical-section">
+                <h2>Vertical Grid</h2>
+
+                <div class="control-group">
+                    <div class="vertical-grid-toggle-container">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-vertical-grid" />
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <span class="toggle-label">Show Vertical Grid</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="vertical-columns">Rows</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="vertical-columns" min="1" max="20" value="8" />
+                        <span id="vertical-columns-value">8</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="vertical-gutter">Gutter</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="vertical-gutter" min="0" max="50" value="20" />
+                        <span id="vertical-gutter-value">20px</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="vertical-margin">Margin</label>
+                    <div class="input-with-unit">
+                        <input type="range" id="vertical-margin" min="0" max="50" value="16" />
+                        <span id="vertical-margin-value">16px</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="presets-section">
+                <h2>Screen Presets</h2>
+                <div class="preset-buttons">
+                    <button class="preset-btn" data-width="375">Mobile</button>
+                    <button class="preset-btn" data-width="768">Tablet</button>
+                    <button class="preset-btn" data-width="1024">Tablet Pro</button>
+                    <button class="preset-btn" data-width="1200">Desktop</button>
+                    <button class="preset-btn" data-width="1440">Desktop XL</button>
+                </div>
+            </section>
+
+            <section class="actions-section">
+                <button id="reset-btn" class="reset-btn">Reset to Default</button>
+                <div class="shortcuts-info">
+                    <small>Keyboard: Ctrl/Cmd + Shift + G</small>
+                </div>
+                <div class="maintainer-info">
+                    <a href="https://github.com/fiqryq/responsive-grid-assistant" target="_blank"
+                        rel="noopener noreferrer" class="github-link">
+                        <span class="github-text">
+                            ⭐ fiqryq/responsive-grid-assistant</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module"></script>
+</body>
+
+</html>
