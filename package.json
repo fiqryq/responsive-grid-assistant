@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "node api.js && vite build --watch",
+    "dev": "vite build --watch",
     "preview": "vite preview",
     "clean": "rimraf dist"
   },
